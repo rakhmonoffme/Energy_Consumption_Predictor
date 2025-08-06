@@ -9,7 +9,7 @@ try:
     x_test = pd.read_csv('X_test.csv')
     y_test = pd.read_csv('y_test.csv')
 except FileNotFoundError:
-    X_test = None
+    x_test = None
     y_test = None
 
 
