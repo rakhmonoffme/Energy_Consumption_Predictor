@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, r2_score
 
 model = joblib.load('lgbm_model.joblib')
 try:
-    x_test = pd.read_csv('X_test.csv')
+    x_test = pd.read_csv('x_test.csv')
     y_test = pd.read_csv('y_test.csv')
 except FileNotFoundError:
     x_test = None
