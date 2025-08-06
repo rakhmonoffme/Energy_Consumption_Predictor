@@ -1,6 +1,9 @@
 # ⚡ Energy Consumption Predictor
 
 This project is a machine learning regression model that predicts **daily energy consumption (in kWh)** based on several building-related and environmental inputs. The model is trained on a dataset of 1,000 entries and deployed using **Streamlit** for real-time, interactive predictions.
+Try the model on Streamlit cloud:
+
+https://energyconsumptionpredictor-o.streamlit.app
 
 ---
 
