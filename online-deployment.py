@@ -1,10 +1,10 @@
 import pandas as pd
 import streamlit as st
-from joblib import load
+import joblib
 from sklearn.metrics import accuracy_score, r2_score
 
 
-model = load('lgbm_model.joblib')
+model = joblib.load('lgbm_model.joblib')
 try:
     x_test = pd.read_csv('X_test.csv')
     y_test = pd.read_csv('y_test.csv')
@@ -12,7 +12,7 @@ except FileNotFoundError:
     X_test = None
     y_test = None
 
-    
+
 # Page, UI header
 
 st.set_page_config(page_title='Energy Consumption Prediction', page_icon=':zap:')
