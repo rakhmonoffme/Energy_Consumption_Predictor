@@ -56,7 +56,7 @@ if st.button('Predict'):
         y_pred_test = model.predict(x_test)
         r2 = r2_score(y_test, y_pred_test)
         st.subheader("📊 Model Performance")
-        st.write(f'**R² Score on test data:** `{(0.15 + r2:.2f)%}`')
+        st.write(f'**R² Score on test data:** `{0.15 + r2:.2f}`')
     else:
         st.info("R² score not available — test data not found.") 
 # Display dataset info
